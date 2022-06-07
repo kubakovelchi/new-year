@@ -85,11 +85,45 @@ body {
     top: 0;
 
 }
-/*@media(max-width: 576px) {*/
-/*      .contend p{*/
-/*          width: 328px;*/
+@media(max-width:576px) {
+    .top-right {
+        display: none;
+    }
 
-/*}*/
-/*}*/
+    .top-left {
+        width: 75px;
+    }
+
+    .contend h1 {
+        font-size: 50px;
+    }
+
+    .contend {
+        margin: 30px;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .music {
+        position: absolute;
+        top: 50px;
+        left: 80%;
+    }
+
+    sing {
+        position: absolute;
+        top: 10px;
+        left: 73%;
+        font-size: 15px;
+        text-align: center;
+    }
+}
 
 /*height/width=padding+margin+border+height/width*/
