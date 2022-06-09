@@ -1,132 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-body {
-    background-color: #1a5b35;
+* {
     margin: 0;
-    width: 100%;
-    height: 90vh;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #1A5B35;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
+    position: relative;
 }
 
 .wrapper {
-    width: 699px;
-    height: 464px;
-    /*border: 1px solid red;*/
+    width: 662px;
 }
 
-.contend {
+.content {
     text-align: center;
 }
 
-.contend h1 {
+.content h1 {
     font-family: 'Comforter', sans-serif;
     font-weight: 400;
     font-size: 72px;
     line-height: 115px;
     color: #CEB076;
-    margin: 0;
+
 }
 
-.contend p {
+.content p {
+    padding-top: 20px;
     font-family: 'Poiret One', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #ffffff;
-}
-
-.sing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-}
-.logo {
-    margin-top: 143px;
-   text-align: center;
+    color: white;
 
 }
 
 .top-left {
     position: absolute;
-    width: 204.89px;
-    height: 240.52px;
-    left: -30px;
-    top: 32px;
+    left: 0;
+    top: 10px;
+    width: 100px;
+}
 
+.top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 105px;
 }
 
 .bottom {
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 110px;
+    z-index: 0;
 }
 
 .music {
     position: absolute;
-    width: 56px;
-    height: 56px;
-    left: 14px;
-    bottom: 75px;
-
+    left: 7px;
+    bottom: 60px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 1;
 }
-.top-right {
+
+.sign {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.sign img {
     position: absolute;
-    width: 239.54px;
-    height: 236.39px;
-    right: -28.54px;
-    top: 0;
-
+    padding-left: 280px;
 }
+
+.sign p {
+    font-family: 'Poiret One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+span {
+    width: 100px;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    left: 7px;
+    bottom: 110px;
+}
+
 @media(max-width:576px) {
-    .top-right {
+    .img_tobRight {
         display: none;
     }
 
-    .top-left {
+    .img_topLeft {
         width: 75px;
-        margin: 2px;
     }
 
-    .contend h1 {
+    .content h1 {
         font-size: 45px;
         margin-top: 100px;
     }
 
-    .contend {
+    .content {
         margin: 30px;
     }
 
-    .bottom {
+    .img_bottom {
         display: none;
     }
 
     .logo {
-
+        margin: 0 auto;
         padding-top: 30px;
-        margin: 20px 0 20px;
+        margin:20px 0 20px;
     }
 
-    .music {
+    .img_muzik {
         position: absolute;
         top: 50px;
         left: 80%;
     }
-
-    .sing {
+    span {
         position: absolute;
         top: 10px;
         left: 73%;
         font-size: 13px;
         text-align: center;
     }
+    body{
+        height: 100%;
+    }
 }
-
-/*height/width=padding+margin+border+height/width*/
