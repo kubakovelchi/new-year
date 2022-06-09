@@ -114,11 +114,11 @@ span {
 }
 
 @media(max-width:576px) {
-    .img_tobRight {
+    .top-right {
         display: none;
     }
 
-    .img_topLeft {
+    .top-left{
         width: 75px;
     }
 
@@ -131,17 +131,17 @@ span {
         margin: 30px;
     }
 
-    .img_bottom {
+    .bottom {
         display: none;
     }
 
     .logo {
-        margin: 0 auto;
+
         padding-top: 30px;
         margin:20px 0 20px;
     }
 
-    .img_muzik {
+    .music {
         position: absolute;
         top: 50px;
         left: 80%;
