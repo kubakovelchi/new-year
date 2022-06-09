@@ -74,7 +74,7 @@ body {
     z-index: 1;
 }
 
-.sign {
+.sing {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -84,12 +84,12 @@ body {
     margin-top: 30px;
 }
 
-.sign img {
+.sing img {
     position: absolute;
     padding-left: 280px;
 }
 
-.sign p {
+.sing p {
     font-family: 'Poiret One', cursive;
     font-style: normal;
     font-weight: 400;
